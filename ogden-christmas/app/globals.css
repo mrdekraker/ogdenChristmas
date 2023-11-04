@@ -16,12 +16,16 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  background: #8A0101;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #787878, #8A0101);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #787878, #8A0101); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
