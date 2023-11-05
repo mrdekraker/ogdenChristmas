@@ -19,7 +19,16 @@ const Navbar = (props: Props) => {
       <nav className="flex justify-center items-center w-full text-slate-100 px-2 md:px-0">
         <div className="hidden sm:block">
           <Link href="/">
-            <Image src="/ogden-logo.png" alt="Ogden Logo" width={360} height={360} />
+            <Image
+              src="/ogden-logo.png"
+              alt="Ogden Logo"
+              width={360}
+              height={360}
+              style={{
+                width: '100%',
+                height: 'auto',
+              }}
+            />
           </Link>
         </div>
         <div className="flex items-center gap-2 md:gap-10 text-xl md:text-2xl mt-2" style={{ transform: 'translateY(-7px)' }}>
@@ -28,6 +37,7 @@ const Navbar = (props: Props) => {
           <Link href="/grades/third" className="hover:text-slate-200">Third</Link>
           <Link href="/grades/fourth" className="hover:text-slate-200">Fourth</Link>
           <Link href="/grades/fifth" className="hover:text-slate-200">Fifth</Link>
+          <Link href="/" className="hover:text-slate-200">Home</Link>
         </div>
       </nav>
 
