@@ -31,6 +31,9 @@ const Navbar = (props: Props) => {
           </Link>
         </div>
         <div className="flex items-center gap-10 text-2xl mt-2" style={{ transform: 'translateY(-7px)' }}>
+          <Link passHref href="/" className="hover:text-slate-200">
+            <div className={`link ${isLinkActive('/')}`}>Home</div>
+          </Link>
           <Link passHref href="/grades/first" className="hover:text-slate-200">
             <div className={`link ${isLinkActive('/grades/first')}`}>First</div>
           </Link>
@@ -46,9 +49,7 @@ const Navbar = (props: Props) => {
           <Link passHref href="/grades/fifth" className="hover:text-slate-200">
             <div className={`link ${isLinkActive('/grades/fifth')}`}>Fifth</div>
           </Link>
-          <Link passHref href="/" className="hover:text-slate-200">
-            <div className={`link ${isLinkActive('/')}`}>Home</div>
-          </Link>
+          
         </div>
       </nav>
       <div className="flex justify-center gap-8 mb-4 mx-10 text-center text-slate-100">
