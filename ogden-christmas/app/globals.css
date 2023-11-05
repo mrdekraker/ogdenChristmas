@@ -28,4 +28,14 @@ html {
   background: #8A0101;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #787878, #8A0101);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #787878, #8A0101); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
+}
+
+.lyrics::-webkit-scrollbar {
+  display: none;
+}
+
+.lyrics {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
