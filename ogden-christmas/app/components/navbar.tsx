@@ -27,10 +27,15 @@ const Navbar = (props: Props) => {
       <nav className="flex justify-center items-center w-full text-slate-100">
         <div className="hidden sm:block">
           <Link href="/">
-            <Image src="/ogden-logo.png" alt="Ogden Logo" width={360} height={360} />
+            <Image src="/ogden-logo.png" alt="Ogden Logo" width={360} height={360}
+              style={{
+                height: 'auto',
+                width: 'auto',
+            }}
+            />
           </Link>
         </div>
-        <div className="flex items-center gap-10 text-2xl mt-2" style={{ transform: 'translateY(-7px)' }}>
+        <div className="flex items-center gap-2 md:gap-10 text-xl md:text-2xl mt-2" style={{ transform: 'translateY(-7px)' }}>
           <Link passHref href="/" className="hover:text-slate-200">
             <div className={`link ${isLinkActive('/')}`}>Home</div>
           </Link>
