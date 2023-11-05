@@ -39,3 +39,8 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.active {
+  /* underline */
+  text-decoration: underline;
+}
